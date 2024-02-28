@@ -39,6 +39,31 @@ M.general = {
     end,
       "toggle transparency",
     },
+    -- rust-tools
+    ["<leader>rca"] = {
+        "<cmd> RustCodeAction <CR>",
+      "RustCodeActions", opts={}
+    },
+    ["<leader>rch"] = {
+        "<cmd> RustHoverActions <CR>",
+      "RustHoverActions",opts ={buffer=false}
+    },
+    ["<leader>rcc"] = {
+        "<cmd> RustRunnables <CR>",
+      "RustRunnables",opts ={}
+    },
+    ["<leader>rcp"] = {
+        "<cmd> RustOpenCargo <CR>",
+      "RustOpenCargo",opts ={}
+    },
+    ["<leader>rcr"] = {
+       "<cmd> RustRun <CR>",
+      "RustRun",opts ={}
+    },
+    ["<leader>rct"] = {
+       "<cmd> RustTest <CR>",
+      "RustTest",opts ={}
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },

@@ -8,6 +8,7 @@ local plugins = {
       return require("custom.configs.null-ls")
     end
   },
+  {"github/compilot.vim"},
   -- -- => null-ls
   -- {
   --   "jose-elias-alvarez/null-ls.nvim",
@@ -56,6 +57,7 @@ local plugins = {
   {
     "simrat39/rust-tools.nvim",
     ft = "rust",
+    dependencies = "neovim/nvim-lspconfig",
     opts = function ()
       require("custom.configs.rust-tools")
     end,
